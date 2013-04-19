@@ -1,3 +1,12 @@
+Bootstraped是在Bootstrap v2.3.1版本的基础上对中文排版的改进和对组件的增强。
+
+目前的修改包括：
+
+*  去除Glyphicons图标，改用Font Awesome图标字体（使用时需要针对IE7单独引入一个CSS文件）
+*  对中文字，尤其是H1-H6标题字体使用微软雅黑等非衬线中文字体，并去除BS默认的Bold Font Weight
+*  对`.lead`使用非衬线中文字体，去掉Bold Font Weight。（字号大的宋体显示效果很差）
+
+
 <a href="http://getbootstrap.com">
   <img src="http://twitter.github.com/bootstrap/assets/img/bootstrap-docs-readme.png" width="100px">
 </a>
