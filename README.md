@@ -1,4 +1,6 @@
-`Bootstraped是在Bootstrap v2.3.1版本的基础上对中文排版的改进和对组件的增强。`
+```
+Bootstraped是在Bootstrap v2.3.1版本的基础上对中文排版的改进和对组件的增强。
+```
 
 #目前的修改包括：#
 
