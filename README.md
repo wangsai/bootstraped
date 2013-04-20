@@ -1,10 +1,29 @@
-Bootstraped是在Bootstrap v2.3.1版本的基础上对中文排版的改进和对组件的增强。
+`Bootstraped是在Bootstrap v2.3.1版本的基础上对中文排版的改进和对组件的增强。`
 
-目前的修改包括：
+#目前的修改包括：#
 
 *  去除Glyphicons图标，改用Font Awesome图标字体（使用时需要针对IE7单独引入一个CSS文件）
 *  对中文字，尤其是H1-H6标题字体使用微软雅黑等非衬线中文字体，并去除BS默认的Bold Font Weight
 *  对`.lead`使用非衬线中文字体，去掉Bold Font Weight。（字号大的宋体显示效果很差）
+
+#使用说明：#
+
+##生产环境##
+
+bootstrap目录下面包含了所有用于生产环境的css、js、font文件，直接引入页面中即可，使用方式和原版Bootstrap一致：
+
+* [中文文档 ](http://www.bootcss.com)
+* [英文文档](http://getbootstrap.com)
+
+##编译##
+
+目前只是针对Windows环境修改了编译脚本（build.bat）。编译之前需要准备以下环境：
+
+* node.js
+* npm install -g less jshint recess uglify-js
+
+上面的环境搭建好后，启动 “Node.js command prompt”进入build.bat所在目录，直接执行build.bat即可，
+构建脚本执行之后会生成bootstrap目录及其完整的子目录结构。
 
 
 <a href="http://getbootstrap.com">
