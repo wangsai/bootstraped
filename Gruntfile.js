@@ -45,6 +45,7 @@ module.exports = function(grunt) {
     },
 
 
+    //order is IMPORTANT!!!
     plugins: [
       'js/bootstrap-transition.js',
      'js/bootstrap-alert.js',
@@ -83,6 +84,17 @@ module.exports = function(grunt) {
     },
 
 
+    connect: {
+        server: {
+          options: {
+            port: 9001,
+            base: 'docs',
+            keepalive: true
+          }
+        }
+      },
+
+
     jshint: {
       options: {
         curly: true,
@@ -117,8 +129,15 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-connect');
+
+  // Load local tasks
+  grunt.loadTasks('tasks'); //docs task
 
   // Default task.
-  grunt.registerTask('default', ['clean', 'copy', 'less', 'concat', 'uglify']);
+  grunt.registerTask('build', ['clean', 'copy', 'less', 'concat', 'uglify']);
+  grunt.registerTask('default', ['build']);
+  grunt.registerTask('doc', ['docs']);
+  grunt.registerTask('server', ['connect']);
 
 };
