@@ -18,11 +18,10 @@ build目录下面包含了所有用于生产环境的css、js、font文件，直
 ```
 注意：针对IE7需要加入以下代码，让Font Awesome兼容IE7
 
-`
 <!--[if IE 7]>
       <link rel="stylesheet" href="css/font-awesome-ie7.min.css">
 <![endif]-->
-`
+
 ```
 
 ##编译##
@@ -33,7 +32,7 @@ build目录下面包含了所有用于生产环境的css、js、font文件，直
 
 请针对不同环境下载（或采用相应环境下的安装方式）安装即可。
 
-###安装 node CLI###
+###安装 grunt-cli###
 
 **如果你以前将Grunt安装在了全局环境下（安装时使用了 -g 参数），就需要先将其删除：**
 
@@ -77,7 +76,7 @@ grunt server
 http://localhost:9001
 ```
 
-
+##在线文档##
 * [中文文档 ](http://www.bootcss.com)
 * [英文文档](http://getbootstrap.com)
 
