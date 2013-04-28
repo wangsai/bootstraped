@@ -56,6 +56,13 @@ npm install -g grunt-cli
 在命令行下将当前目录转移到Bootstraped源码目录，即Gruntfile.js所在目录，执行：
 
 ```shell
+npm install
+```
+安装所有依赖库。
+
+执行：
+
+```shell
 grunt
 ```
 即可重建build目录，并拷贝font、编译并压缩less、合并并压缩js文件。
