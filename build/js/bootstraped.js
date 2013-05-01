@@ -1,4 +1,4 @@
-/*! bootstraped - v2.3.1 - 2013-04-27
+/*! bootstraped - v2.3.1 - 2013-05-02
 * http://www.bootcss.com/
 * Copyright (c) 2013 ; Licensed Apache-2.0 */
 !function ($) {

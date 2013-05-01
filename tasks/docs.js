@@ -5,7 +5,7 @@ module.exports = function (grunt) {
 
   var fs = require('fs'),
     hogan = require('hogan.js'),
-    prod  = true,//process.argv[2] == 'production',
+    prod  = false,//process.argv[2] == 'production',
     title = 'Bootstrap';
 
   /**
